@@ -9,7 +9,7 @@ let sequelize;
 
 // Si on est en test -> On initialise avec sqlite 'in memory'
 if( process.env.NODE_ENV === 'test') {
-    sequelize = new Sequelize('sqlite::memory:')
+    sequelize = new Sequelize('sqlite::memory:',  { logging : false } )
 }
 else {
     // Sinon avec la vraie DB :
