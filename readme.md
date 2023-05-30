@@ -11,7 +11,16 @@ Cas "concret" avec sequelize + msql → Gestion d'un stock de produit
         npm i sequelize tedious dotenv cross-env
     ```
 - Test :
-
+    - mocha : Test Runner
+    - chai : Ajout des fonctionnalités
+    - chai-as-promised : Gestion async/await
+    ```
+        npm i --save-dev mocha chai chai-as-promised
+    ```
+    - sqlite3 : Pour pouvoir utiliser sqlite pour les tests db 'in memory'
+    ```
+        npm i --save-dev sqlite3
+    ```
 # Rappels - Déroulement d'un TDD
 1) Écrire un test
 2) Lancer le test -> Il doit échouer

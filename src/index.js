@@ -18,3 +18,4 @@ if(process.env.NODE_ENV === 'development') {
     // db.sequelize.sync( { force : true } ) //Force comme un bourrin, supprime toute la db et la recrée
     
 }
+
