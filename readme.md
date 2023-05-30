@@ -3,8 +3,14 @@ Cas "concret" avec sequelize + msql → Gestion d'un stock de produit
 
 # Dépendances
 - Features Project
-
-- Test
+    - Sequelize (ORM) (https://sequelize.org/)
+    - Tedious (Librairie pour pouvoir travailler avec MSQL (ssms))
+    - dotenv (Librairie qui permet de configurer les variables d'environnement)
+    - cross-env (Librairie pour switch d'environnement)
+    ```
+        npm i sequelize tedious dotenv cross-env
+    ```
+- Test :
 
 # Rappels - Déroulement d'un TDD
 1) Écrire un test
@@ -13,3 +19,9 @@ Cas "concret" avec sequelize + msql → Gestion d'un stock de produit
 4) Relancer le test
     - Il fonctionne -> Retour à l'étape 1 pour commencer un nouveau test
     - Il échoue -> Retour à l'étape 3
+
+# Configuration MSSQL
+- Clique-droit sur le serveur -> Proprietés -> Securité -> Autoriser connection SQL Sever + Windows Authentication 
+- Créer un User : Security -> Logins -> Clique-Droit -> New Login -> Choisir un Username et un Password
+- Créer DataBase : Clique-droit Database -> New DataBase
+- Donner accès à l'utilisateur :  Security -> Logins ->  Clique-Droit sur le User -> Proprietés -> User Mapping -> Cocher la bd et les droits
